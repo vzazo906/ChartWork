@@ -1,0 +1,17 @@
+import React from 'react';
+
+class ChartworkDownload extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Download Chartwork</h1>
+        <div id="downloadLink">
+          <h2>Download Chartwork for Android</h2>
+          <a href="/chartwork/yourgame.apk" download>Download Chartwork</a>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default ChartworkDownload;
