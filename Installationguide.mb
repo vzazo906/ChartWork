@@ -1,0 +1,7 @@
+To set up the game a few steps need to be taken.
+1. First a computer is required and terminal needs to be opened on it.
+2. Then you need to create a folder and place the website file inside of that directory.
+3. While you have the directory open in the terminal run the command NPM install. (this will install the react software allowing you to start the website server up.
+4. Now run the command NPM start this will start the server.
+5. Then copy the link to the website ( it should say localhost:: then numbers) paste it into your browser.
+6. After you reach the website click on the download button which will then redirect you to the newest version of the game to download.
