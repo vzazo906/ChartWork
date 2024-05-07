@@ -1,7 +1,28 @@
-To set up the game a few steps need to be taken.
-1. First a computer is required and terminal needs to be opened on it.
-2. Then you need to create a folder and place the website file inside of that directory.
-3. While you have the directory open in the terminal run the command NPM install. (this will install the react software allowing you to start the website server up.
-4. Now run the command NPM start this will start the server.
-5. Then copy the link to the website ( it should say localhost:: then numbers) paste it into your browser.
-6. After you reach the website click on the download button which will then redirect you to the newest version of the game to download.
+Download ChartWork at: http://chartwork.sluhncauldron.org/
+
+To recreate ChartWork: 
+1. Create a unity project
+2. Import all of our asset folders into Unity, this includes Art, SFX, and Scripts
+3. Setup multiple scenes and import the correct art needed into each scene and layer properly
+4. For the puzzle scenes, make 2 of each puzzle piece that is the same size with the same size hitbox 
+and have one with the color's alpha at 0 to make it invisible. Put this one on the far back layer and add
+the correct Slot tag to make the image the slot. add the scene name in the inspector to go to the next scene you want
+when the puzzle is completed
+5. Create an empty object and name it PuzzleManager attach the New Puzzle Manager script to it
+6. With the visible puzzle pieces  make sure they are on the top layer add an audio source component 
+and attach the Puzzle Piece script. in the inspector, for each piece, there will be 4 boxes under the
+added script, add the correct slot name to match the slot tag on the invisible piece, then attach the 
+PuzzleManager object to the next box, then add in the correct and incorrect audio files for the last 2 boxes.
+add the background images next and layer them correctly as well.
+7. On any scene that needs a button including the title, level select, settings, and info pages add UI buttons
+where needed. Attach an image component and add the artwork needed, attach the button script then in the 
+button On Click function in the inspector add the script again to the box on the left and on the right choose
+the function you would like the button to carry out by clicking the dropdown menu going to the button and choosing
+from the list
+8. If you need to change the scene when a button is clicked use the method for step 7 but you will also need to 
+add in the name of the scene you would like to change to when the button s clicked
+9. On the title screen add an audio source game object and attach the soundtrack to the audio resource then add the
+music script to the object
+10. On the settings page add a volume UI object and attach the volume script to it. add the volume object to the script 
+in the inspector then add the script again into the on value changed function in the inspector and click the dropdown,
+go to volume and select the change volume function.
